@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/js/oauth2.js"></script>
+
+    <!--
+    Сокращенная запись <script src="oauth2.js"/> подключения файлов/скриптов может не работать во многих браузерах, поэтому всегда используем закрывающий тег
+    -->
+
+</head>
+<body>
+
+
+
+<!-- страница отображает данные из resource server API (только после того, как пользователь авторизуется и получит access token) -->
+<div id="userdata"></div>
+<div id="email"></div>
+
+<!-- выйти из системы -->
+<button onclick="logout()" id="logout">logout</button>
+
+<script>
+    initPage();
+</script>
+
+
+
+</body>
+</html>
