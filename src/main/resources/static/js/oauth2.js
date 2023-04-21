@@ -6,14 +6,14 @@
 // В этом проекте мы все делаем вручную, чтобы вы лучше поняли весь алгоритм действий
 
 // константы для использования во всем файле js
-const CLIENT_ID = "todoapp-client"; // название должен совпадать c клиентом из KeyCloak
+const CLIENT_ID = "grobikon-client"; // название должен совпадать c клиентом из KeyCloak
 const SCOPE = "openid"; // какие данные хотите получить помимо access token (refresh token, id token, email и пр.) - можно через пробел указывать неск значений
 const RESPONSE_TYPE_CODE = "code"; // для получения authorization code
 
 
 // !! в каждой версии KeyCloak могут меняться URI - поэтому нужно сверяться с документацией
-const KEYCLOAK_URI = "https://localhost:8443/realms/todoapp-realm/protocol/openid-connect"; // общий URI KeyCloak
-const CLIENT_ROOT_URL = "https://localhost:8080"; // куда auth server будет отправлять auth code
+const KEYCLOAK_URI = "https://localhost:8443/realms/grobikon-realm/protocol/openid-connect"; // общий URI KeyCloak
+const CLIENT_ROOT_URL = "https://localhost:8081"; // куда auth server будет отправлять auth code
 
 const BFF_URI = "https://localhost:8902/bff"
 
